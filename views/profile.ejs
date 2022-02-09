@@ -1,0 +1,13 @@
+<%- include('parts/head') -%>
+<%- include('parts/auth/nav') -%>
+  <div class="white">  
+  <center>
+      <img class="profile-av" src="<%= user.avatarUrl(256) %>" alt="<%= user.username %>" />
+  <h1>Welcome <%= user.username %></h1>
+  <p>You are currently logged in as <strong><%= user.tag %></p>
+  <p>Settings page is under maintanance ⛔</p>
+ 
+    </center>
+  <br>
+<br>
+<%- include('parts/foot') -%>

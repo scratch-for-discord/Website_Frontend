@@ -1,0 +1,30 @@
+          <section class="header">
+
+     <nav>
+      
+       <a href="/home"><img src="images/s4dlogo.png"></a>
+      
+       <div class="nav-links" id="navLinks"> 
+       <i class="material-icons" onclick="hideMenu()">close</i>
+        <ul>
+       
+         <li><a href="https://node-server.darkmole.repl.co"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#info"><i class="fas fa-info-circle"></i>  Info</a></li>
+          <li><a href="#about"><i class="fas fa-address-card"></i>     About</a></li>
+          <li><a href="#faq"><i class="fas fa-question-circle"></i>   FAQ</a></li>
+          <li><a href="#"><i class="fas fa-book"></i> Documentation</a></li>
+          
+          <div class="dropdown">
+          <button  class="dropbtn" id="oauth2"><a class="e"><img src="<%= user.avatarUrl(256) %>" class="user-pfp" alt="<%= user.username %>"> <%= user.username %> </a></button>
+           <div class="dropdown-content">
+           <a href="/profile">Profile</a>
+    <a href="/logout"><i class="fas fa-sign-out-alt"></i>Log Out</a>
+     </div>
+    
+  </div>
+          
+        </ul>
+        
+       </div>
+     <i class="material-icons" onclick="showMenu()">menu</i>
+     </nav>
